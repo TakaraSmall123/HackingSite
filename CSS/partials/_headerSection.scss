@@ -1,0 +1,22 @@
+header {
+  height: 100vh;
+  background-color: black;
+  background-size: cover;
+  background-position: center; 
+  padding-top: 10px;
+}
+
+h1 {
+  margin: 0;
+  color: white;
+  font-weight: bold;
+  // font-size: 5rem;
+  text-shadow: 3px 3px 4px black;
+  padding-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 50px; }
+
+h1 span {
+  display: inline;
+  padding-left: 2px; 
+}

@@ -1,0 +1,39 @@
+header {
+  height: 100vh;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  padding-top: 10px; }
+
+h1 {
+  margin: 0;
+  color: white;
+  font-weight: bold;
+  text-shadow: 3px 3px 4px black;
+  padding-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 50px; }
+
+h1 span {
+  display: inline;
+  padding-left: 2px; }
+
+html {
+  font-size: 62.5%; }
+
+footer {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.flex {
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
