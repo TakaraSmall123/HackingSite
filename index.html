@@ -5,85 +5,256 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<link rel="stylesheet" href="CSS/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Crafty+Girls|Kalam|Pangolin|Permanent+Marker|Roboto|Zeyada" rel="stylesheet">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="icon" type="image/png" href="images/laptop_font_awesome.png">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="image/png" href="images/envelope.png">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i" rel="stylesheet">
 </head>
 <body>
-	<!-- Header -->
-	<header>
-	<h1>
-	<div class="hackEffect" id="restart">
-	<div class="glitch-effect" data-text="HOW VULNERABLE">HOW VULNERABLE</div>
-	<div class="glitch-effect" data-text="IS YOUR">IS YOUR</div>
-	<div class="glitch-effect" data-text="PERSONAL">PERSONAL</div>
-	<div class="glitch-effect" data-text="DATA ?">DATA<span class="blink">?</span></div>
-	</div>
-	</h1>
-	
-	<div class="buttonContainer">
-	<a href="#standaloneQuote"><button class="startQuiz">LEARN MORE</button></a>
-	</div>
-	</header>
-	<!-- Header -->
+<header>
+  <div class="introWrapper" id="introWrapper">
+    <div class="headlineWrapper">  
+    	 <div class="headline" data-text="HOW VULNERABLE">HOW VULNERABLE</div> 
+    	 <div class="headline" data-text="IS YOUR PERSONAL">IS YOUR PERSONAL</div>
+    	 <div class="headline" data-text="DATA">DATA?</div> 
+    </div>
+  </div>
+  <div>
+  <i class="fa fa-arrow-right" aria-hidden="true" id="introChevron"></i>
+  </div>
+</header>
 
-	<!-- FadeIn quote sections -->
-	<section class="hackingQuote flex" id ="hackingQuote">
-	<blockquote><p class="standaloneQuote" id="standaloneQuote">The number of reported cybersecurity incidents globally rose by 48 per cent to 42.8 million in 2014. That amounts to an average of 117,339 attacks per day.</p></blockquote>
+<!-- // -->
+<section class="quoteSection" id="quoteSection">
+  <div class="quoteSection__wrapper">
+    <nav>
+      <ul class="nav">
+        <div class="nav__first">
+         <p class ="intro" id="nav">HOME</p>
+        </div>
+        <div class="nav__middle">
+          <p class="stand" id="nav">FACTS</p>
+          <p class="why" id="nav">WHY IT MATTERS?</p>
+          <p class="how" id="nav">HOW TO PROTECT YOURSELF</p>
+          <p class="how" id="nav">WAYS YOU CAN BE HACKED</p>
+          <p class="hackedInfo" id="nav">HACKED WEBSITES</p>
+        </div>
+        <div class="nav__last">
+          <p><i class="fa fa-twitter" aria-hidden="true"></i></p>
+          <p><i class="fa fa-envelope-o" aria-hidden="true"></i></p>
+          <p><i class="fa fa-facebook" aria-hidden="true"></i></p>
+        </div>
+      </ul>
+    </nav>
+    <div class="quote">
+      <div class="quoteParagraphs">
+        <p id="typewriter">The number of reported cybersecurity incidents globally rose 48 per cent to 42.8 million in 2016...that's 117,339 attacks per day.</p>
+        <p class="attribution">—PricewaterhouseCoopers, <span><a href="http://www.pwc.com/us/en/cybersecurity.html2014">Cybersecurity General report</a></span></p>
+      </div>
+      </div>
+        <div class="hacking__chevron">
+          <p>NEXT PAGE</p>
+          <i class="fa fa-arrow-right" aria-hidden="true" id="quoteChevron"></i>
+      </div>
+  </div>
+</section>
+<!-- // -->
 
-	<div class="appendixInfo">
-	<p class="attribution">—PricewaterhouseCoopers, <a href="http://www.pwc.com/us/en/cybersecurity.html2014">Cybersecurity General report</a></p>
-	<a href="#newsFacts"><div class="scrollOne"><i class="fa fa-chevron-down" aria-hidden="true"></i></div></a>
-	</div>
-	</section>
-	<!-- FadeIn quote sections -->
+<section class="whyItMattersSection" id="whyItMattersSection">
+  <nav>
+    <ul class="nav">
+      <div class="nav__first">
+       <p class ="intro" id="nav">HAVE YOU BEEN HACKED?</p>
+      </div>
+      <div class="nav__middle">
+        <p class="stand" id="nav">FACTS</p>
+        <p class="why" id="nav">WHY IT MATTERS?</p>
+        <p class="how" id="nav">HOW TO PROTECT YOURSELF</p>
+        <p class="hackedInfo" id="nav">FIND OUT IF YOU'VE BEEN HACKED?</p>
+      </div>
+      <div class="nav__last">
+        <p><i class="fa fa-twitter" aria-hidden="true"></i></p>
+        <p><i class="fa fa-envelope-o" aria-hidden="true"></i></p>
+        <p><i class="fa fa-facebook" aria-hidden="true"></i></p>
+      </div>
+    </ul>
+  </nav>
+  <div class="information__wrapper" id="wrapper">
+    <div class="test">
+      <h2>WHY IT MATTERS?</h2>
+      <p class="whyItMatters--newsPargraphs">Recent security breaches — including the leak of 200,000 Snapchat photos to the website 4chan and the apparent infiltration of Dropbox — raise new questions about how hackers are able to proliferate.</p> 
 
-	<!-- Background info sections -->
-	<section class="news flex" id="newsFacts">
-	<div class="whyItMatters">
-	<h2>WHY IT MATTERS?</h2>
-	<p class="newsPargraphs">In 2014 Yahoo announced that at least 500 million users had their information stolen. The hack is just one of several firms that have been attacked in the last five years, which range from Ashley Madison to Home Hardware.</p>
-	<p class="newsPargraphs"> While Merriam Webster still defines the term "hack" and "hacking" in terms of computer or program modification it's often now associated with nefarious criminal uses such as identity theft, credit card fraud or other criminal actions.</p>
-	</div>	
-	</div>
+      <p class="whyItMatters--newsPargraphs">Hackers buy and sell our private data in a black market that is so organized and well-protected that it's tough for law enforcement officials to keep up with sites that often pop up overnight and disappear by the next morning.</p>
 
-	<div class="beWorried">
-	<h2>SHOULD I BE WORRIED?</h2>
-	<p class="newsPargraphs">From the Russians allegedly orchestrating an email hack against the Democratic National Committee to VK hacks that targets 171 million users around the world cyberhacks made some of the biggest headlines in 2016.</p>
-	<p class="newsPargraphs"> Comprised data not only increases your chances of being hacked again, but also puts you (and your friends and family) at risk for other scams</p>
-	</div>
-	<a href="#quiz">
-	<div class="scrollTwo">
-	<i class="fa fa-chevron-down" aria-hidden="true"></i>
-	</div>
-	</a>
-	</section>
-	<!-- Background info sections -->
+      <p class="whyItMatters--newsPargraphs">What's more, there's a catch-22 where criminal investigations may just lead to more cyber crime, as noted by a report released earlier this year by the RAND Corporation's National Security Research Division.</p>
 
-	<!-- quiz section with empty space for api-->
-	<section class="quiz flex" id="quiz">
-	<div class="container" id="hackWork">
-	<h3>HAVE YOU BEEN HACKED?</h3>
-	<p class="quizIntro quizIntroFirst ">Below is a list of every website that has been hacked in 2016. Click on any of the following companies to find out what type of your data has been compromised over the last 12 months.</p> 
-	</div>
-	</div>
-	</section>
-	<div class="resultNumbers">
-	<button class="crunch">Crunch the data</button>
-	</div>
-	<!-- quiz section with empty space for api-->
+      <p class="whyItMatters--newsPargraphs">"[L]aw enforcement may become a victim of its own success," the report noted, as "more arrests and takedowns lead to more media coverage, and hackers become more aware of the opportunities provided by black markets. Further, those already in the market grow smarter as they learn from law enforcement's investigative techniques."</p>
 
-	<div class="totalNumbers" id="totalNumbers">
-	</div>
+      <p class="whyItMatters--newsPargraphs"> When officials do manage to take down these sites, new ones tend to pop up in their place. Here are some black market sites that re-emerged almost immediately after they were taken down</p>
 
-	<footer>
-	<p>Made with assistance from <a href="https://haveibeenpwned.com/">Pwned</a> and the <a href="https://www.nytimes.com/">NYT.com</a></p>
-	</footer>
+      <p class="whyItMatters--newsPargraphs"> When officials do manage to take down these sites, new ones tend to pop up in their place. Here are some black market sites that re-emerged almost immediately after they were taken down</p>
+    
+  </div>
+  <div class="test2">
+          <h2>FAMOUS VICTIMS</h2>
+    <div class="whyItMatters--victims">
+    <div>
+      <span class="fade-in one"><img src="images/dorsey_edit.jpg" aria-hidden="true"></span>
+      <span class="fade-in two"><img src="images/dorsey_edit.jpg" aria-hidden="true"></span>
+      <span class="fade-in three"><img src="images/dorsey_edit.jpg" aria-hidden="true"></span>
+    </div>
+    <div>
+      <span class="fade-in four"><img src="images/dorsey_edit.jpg" aria-hidden="true"></span>
+      <span class="fade-in five"><img src="images/dorsey_edit.jpg" aria-hidden="true"></span>
+      <span class="fade-in six"><img src="images/dorsey_edit.jpg" aria-hidden="true"></span>
+    </div>
+    </div>
+  </div>
+  </div>
+   <div class="hacking__chevron">
+      <p>NEXT PAGE</p>
+      <i class="fa fa-arrow-right" aria-hidden="true" id="whyItMattersChevron"></i>
+    </div>
+</section>
 
-<!-- javascript -->
+<section class="demoSection" id="demoSection">
+  <div class="demoSection__wrapper">
+    <nav>
+      <ul class="nav">
+        <div class="nav__first">
+         <p class ="intro" id="nav">HOME</p>
+        </div>
+        <div class="nav__middle">
+          <p class="stand" id="nav">FACTS</p>
+          <p class="why" id="nav">WHY IT MATTERS?</p>
+          <p class="how" id="nav">HOW TO PROTECT YOURSELF</p>
+          <p class="hackedInfo" id="nav">FIND OUT IF YOU'VE BEEN HACKED?</p>
+        </div>
+        <div class="nav__last">
+          <p><i class="fa fa-twitter" aria-hidden="true"></i></p>
+          <p><i class="fa fa-envelope-o" aria-hidden="true"></i></p>
+          <p><i class="fa fa-facebook" aria-hidden="true"></i></p>
+        </div>
+      </ul>
+    </nav>
+    <div class="demoSection--img__wrapper">
+      <h2>HOW YOU'RE LIKELY BEING HACKED RIGHT NOW</h2>
+      <div class="demoSection--man">
+            <img src="images/man.png">
+            <span class="dot--Left--Wallet">
+            <div>
+              <span>
+                <img src="http://www.placecage.com/100/100" class="image1"/>
+                <p class="paragraph1">Wi-fi hotspots: Freeware makes eavesdropping on emails and web browsing as simple as pressing a button</p>
+              </span>
+
+              <span>
+                <img src="http://www.placecage.com/100/100" class="image3"/>
+                <p class="paragraph3">Reused passwords: A password manager will generate strong passwords so you don't have to so hackers can't hack your accounts.</p>
+              </span>
+            </div>
+
+            <div>
+              <span>
+                <img src="http://www.placecage.com/100/100" class="image2"/>
+                <p class="paragraph2">Surfing the net: A VPN will hide your true location and prevent others from remotely accessing your computer.</p>
+              </span>
+
+              <span>
+                <img src="http://www.placecage.com/100/100" class="image4"/>
+                <p class="paragraph4">Update your software: Take advantage of free updates and patches provided by companies.</p>
+              </span>
+            </span>
+          </div>
+      </div>
+        <div class="hacking__chevron">
+          <p>NEXT PAGE</p>
+          <i class="fa fa-arrow-right" aria-hidden="true" id="demoChevron"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="howToProtectSection" id="howToProtectSection">
+  <nav>
+    <ul class="nav">
+      <div class="nav__first">
+       <p class ="intro" id="nav">HAVE YOU BEEN HACKED?</p>
+      </div>
+      <div class="nav__middle">
+        <p class="stand" id="nav">FACTS</p>
+        <p class="why" id="nav">WHY IT MATTERS?</p>
+        <p class="how" id="nav">HOW TO PROTECT YOURSELF</p>
+        <p class="hackedInfo" id="nav">FIND OUT IF YOU'VE BEEN HACKED?</p>
+      </div>
+      <div class="nav__last">
+        <p><i class="fa fa-twitter" aria-hidden="true"></i></p>
+        <p><i class="fa fa-envelope-o" aria-hidden="true"></i></p>
+        <p><i class="fa fa-facebook" aria-hidden="true"></i></p>
+      </div>
+    </ul>
+  </nav>
+  <div class="information__wrapper" id="wrapper">
+       <div class="test">
+          <h2>HOW TO PROTECT YOURSELF</h2>
+          <p class="howToProtect--newsPargraphs">Gone are the days when credit card fraud and identity theft were all we had to worry about. Hackers have discovered new ways to make money with your photos and social media account information.</p>
+
+          <p>To hackers, LinkedIn and eHarmony offer a goldmine of passwords that can be used to update their "rainbow tables." These tables are basically huge databases that serve as a digital key for hacking harder-to-crack encrypted passwords.</p>
+          <p><span class="hackTips">Password protection:</span></p>
+          <p class="howToProtect--newsPargraphs">
+          <i class="fa fa-key" aria-hidden="true"></i>
+          There are dozens of password managers that work on the premise that you should only need to remember one password. With this master password you can then unlock access to the dozens, if not hundreds of username/password combinations you've acquired.</p>
+
+          <p class="howToProtect--newsPargraphs">
+          <span class="hackTips">Treat wi-fi hotspots with caution:</span>
+          <i class="fa fa-laptop" aria-hidden="true"></i>
+          Widely available freeware makes eavesdropping on emails and web browsing as simple as pressing a button. So that free Wi-Fi hotspot in the hotel lobby or downtown plaza is never going to be very secure.</p>
+
+          <p class="howToProtect--newsPargraphs"><span class="hackTips">Browse the web with a VPN:</span></p>
+          <i class="fa fa-cog" aria-hidden="true"></i>
+          <p class="howToProtect--newsPargraphs">No matter whose network you're using to go online you should always use a VPN. It will hide your true location and prevent others from remotely accessing your computer.</p>
+        </div>
+        <div class="test2">
+
+        </div>
+    </div>
+
+  <div class="hacking__chevron">
+      <p>NEXT PAGE</p>
+      <i class="fa fa-arrow-right" aria-hidden="true" id="howToProtectChevron"></i>
+  </div>
+  </div> 
+</section>
+
+<section class="hackedInfoSection" id="hackedInfoSection">
+    <nav>
+      <ul class="nav">
+        <div class="nav__first">
+         <p class ="intro" id="nav">HOME</p>
+        </div>
+        <div class="nav__middle">
+          <p class="stand" id="nav">FACTS</p>
+          <p class="why" id="nav">WHY IT MATTERS?</p>
+          <p class="how" id="nav">HOW TO PROTECT YOURSELF</p>
+          <p class="hackedInfo" id="nav">FIND OUT IF YOU'VE BEEN HACKED?</p>
+        </div>
+        <div class="nav__last">
+          <p><i class="fa fa-twitter" aria-hidden="true"></i></p>
+          <p><i class="fa fa-envelope-o" aria-hidden="true"></i></p>
+          <p><i class="fa fa-facebook" aria-hidden="true"></i></p>
+        </div>
+      </ul>
+    </nav>
+    <div class="hackedInfo__wrapper" id="hackWork">
+      <h2>HAVE YOU BEEN HACKED?</h2>
+      <p class="quizIntro quizIntroFirst ">Keeping track of compromised accounts can be difficult. Below is a self-updating list of every website that has been hacked in the last six months. Click on any one of the following companies to find out what type of data has been hacked.</p> 
+    </div>
+    <p>Made with API assistance from</p> <p><a href="https://haveibeenpwned.com/">Pwned</a> and the <a href="https://www.nytimes.com/">NYT.com</a></p>
+</section>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-<script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="javascript/script.js"></script>
 <!-- javascript -->
 

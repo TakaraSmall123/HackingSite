@@ -1,23 +1,9 @@
-@import 'partials/normalizeSection';
-@import 'partials/buttonSection';
+@import 'partials/setup';
+@import 'partials/variables';
 @import 'partials/headerSection';
 @import 'partials/infoSection';
-@import 'partials/quoteSection';
 
 html {
 font-size: 62.5%;
 }
 
-footer {
-text-align: center;
-padding-top: 20px;
-padding-bottom: 20px;
-
-}
-
-.flex {
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}

@@ -1,22 +1,251 @@
+@import 'partials/variables';
+
 header {
   height: 100vh;
-  background-color: black;
+  background-color: #303030;
   background-size: cover;
-  background-position: center; 
-  padding-top: 10px;
+  display: flex;
+  flex-direction:column;
+  justify-content: flex-end;
+  
+    .fa {
+    color: white;
+    font-size:$chevronSize;
+    align-items: flex-end;
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    }
 }
 
-h1 {
-  margin: 0;
+.headline {
+  font-size: 50px;
   color: white;
-  font-weight: bold;
-  // font-size: 5rem;
-  text-shadow: 3px 3px 4px black;
-  padding-top: 10px;
-  margin-left: 20px;
-  margin-bottom: 50px; }
-
-h1 span {
-  display: inline;
-  padding-left: 2px; 
+  position: relative;
 }
+
+@keyframes headline-anim {
+  0% {
+    clip: rect(33px, 450px, 106px, 0);
+  }
+  5.88235% {
+    clip: rect(104px, 450px, 20px, 0);
+  }
+  11.76471% {
+    clip: rect(30px, 450px, 99px, 0);
+  }
+  17.64706% {
+    clip: rect(43px, 450px, 16px, 0);
+  }
+  23.52941% {
+    clip: rect(4px, 450px, 103px, 0);
+  }
+  29.41176% {
+    clip: rect(27px, 450px, 41px, 0);
+  }
+  35.29412% {
+    clip: rect(66px, 450px, 85px, 0);
+  }
+  41.17647% {
+    clip: rect(40px, 450px, 115px, 0);
+  }
+  47.05882% {
+    clip: rect(30px, 450px, 23px, 0);
+  }
+  52.94118% {
+    clip: rect(92px, 450px, 84px, 0);
+  }
+  58.82353% {
+    clip: rect(97px, 450px, 66px, 0);
+  }
+  64.70588% {
+    clip: rect(29px, 450px, 25px, 0);
+  }
+  70.58824% {
+    clip: rect(6px, 450px, 65px, 0);
+  }
+  76.47059% {
+    clip: rect(2px, 450px, 54px, 0);
+  }
+  82.35294% {
+    clip: rect(1px, 450px, 72px, 0);
+  }
+  88.23529% {
+    clip: rect(73px, 450px, 13px, 0);
+  }
+  94.11765% {
+    clip: rect(14px, 450px, 26px, 0);
+  }
+  100% {
+    clip: rect(79px, 450px, 104px, 0);
+  }
+}
+@keyframes headline-anims {
+  0% {
+    clip: rect(69px, 450px, 90px, 0);
+  }
+  5.88235% {
+    clip: rect(83px, 450px, 42px, 0);
+  }
+  11.76471% {
+    clip: rect(15px, 450px, 90px, 0);
+  }
+  17.64706% {
+    clip: rect(106px, 450px, 78px, 0);
+  }
+  23.52941% {
+    clip: rect(15px, 450px, 87px, 0);
+  }
+  29.41176% {
+    clip: rect(53px, 450px, 43px, 0);
+  }
+  35.29412% {
+    clip: rect(58px, 450px, 114px, 0);
+  }
+  41.17647% {
+    clip: rect(66px, 450px, 65px, 0);
+  }
+  47.05882% {
+    clip: rect(76px, 450px, 3px, 0);
+  }
+  52.94118% {
+    clip: rect(98px, 450px, 85px, 0);
+  }
+  58.82353% {
+    clip: rect(13px, 450px, 17px, 0);
+  }
+  64.70588% {
+    clip: rect(95px, 450px, 50px, 0);
+  }
+  70.58824% {
+    clip: rect(84px, 450px, 72px, 0);
+  }
+  76.47059% {
+    clip: rect(97px, 450px, 110px, 0);
+  }
+  82.35294% {
+    clip: rect(70px, 450px, 110px, 0);
+  }
+  88.23529% {
+    clip: rect(4px, 450px, 41px, 0);
+  }
+  94.11765% {
+    clip: rect(107px, 450px, 65px, 0);
+  }
+  100% {
+    clip: rect(6px, 450px, 18px, 0);
+  }
+}
+.headline:before, .headline:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #303030;
+  clip: rect(0, 0, 0, 0);
+}
+.headline:after {
+  left: 2px;
+  text-shadow: -1px 0 red;
+  animation: example-one-anim 2s infinite linear alternate-reverse;
+}
+.headline:before {
+  left: -2px;
+  text-shadow: 2px 0 blue;
+  animation: example-one-anims 3s infinite linear alternate-reverse;
+}
+
+@keyframes headline-anim-1 {
+  0% {
+    clip: rect(29px, 714px, 4px, 0);
+  }
+  10% {
+    clip: rect(11px, 714px, 37px, 0);
+  }
+  20% {
+    clip: rect(3px, 714px, 32px, 0);
+  }
+  30% {
+    clip: rect(38px, 714px, 43px, 0);
+  }
+  40% {
+    clip: rect(9px, 714px, 23px, 0);
+  }
+  50% {
+    clip: rect(9px, 714px, 38px, 0);
+  }
+  60% {
+    clip: rect(29px, 714px, 4px, 0);
+  }
+  70% {
+    clip: rect(8px, 714px, 50px, 0);
+  }
+  80% {
+    clip: rect(17px, 714px, 48px, 0);
+  }
+  90% {
+    clip: rect(12px, 714px, 44px, 0);
+  }
+  100% {
+    clip: rect(48px, 714px, 49px, 0);
+  }
+}
+@keyframes headline-anim-2 {
+  0% {
+    clip: rect(17px, 714px, 25px, 0);
+  }
+  10% {
+    clip: rect(9px, 714px, 35px, 0);
+  }
+  20% {
+    clip: rect(4px, 714px, 28px, 0);
+  }
+  30% {
+    clip: rect(39px, 714px, 43px, 0);
+  }
+  40% {
+    clip: rect(31px, 714px, 12px, 0);
+  }
+  50% {
+    clip: rect(48px, 714px, 22px, 0);
+  }
+  60% {
+    clip: rect(12px, 714px, 29px, 0);
+  }
+  70% {
+    clip: rect(31px, 714px, 2px, 0);
+  }
+  80% {
+    clip: rect(9px, 714px, 6px, 0);
+  }
+  90% {
+    clip: rect(1px, 714px, 47px, 0);
+  }
+  100% {
+    clip: rect(40px, 714px, 1px, 0);
+  }
+}
+.headline:before, .headline:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #303030;
+  clip: rect(0, 0, 0, 0);
+}
+.headline:after {
+  left: 2px;
+  text-shadow: -1px 0 white;
+  animation: headline-anim-1 2s infinite linear alternate-reverse;
+}
+.headline:before {
+  left: -2px;
+  text-shadow: 2px 0 red;
+  animation: headline-anim-2 3s infinite linear alternate-reverse;
+}
+
